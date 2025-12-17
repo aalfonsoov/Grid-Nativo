@@ -163,8 +163,9 @@ body{
     grid-auto-rows:auto;
   }
 
-  .subgrid > .card{ grid-area:auto !important; }
+  .subgrid > .card{ grid-area:auto; }
 
   .card{ grid-template-rows:auto auto; }
   .card img{ height:180px; }
 }
+
