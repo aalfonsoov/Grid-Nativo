@@ -1,0 +1,53 @@
+:root{
+  /* Layout */
+  --gap: 12px;
+  --pad: 16px;
+  --radius: 12px;
+  --maxw: 1100px;
+  --cell: 130px;
+  --font: system-ui, Arial, sans-serif;
+
+  --maxw: 1320px; /* antes 1100px */
+  --cell: 170px;  /* antes 130px */
+
+
+  /* Tema (por defecto = claro) */
+  --bg: #f5f5f5;
+  --panel: #ffffff;
+  --card: #fafafa;
+  --text: #222;
+  --muted: #555;
+  --border: #ddd;
+
+  
+}
+
+/* Tema claro explícito (opcional, pero lo mantengo por simetría) */
+@media (prefers-color-scheme: light){
+  :root{
+    --bg: #f5f5f5;
+    --panel: #ffffff;
+    --card: #fafafa;
+    --text: #222;
+    --muted: #555;
+    --border: #ddd;
+
+    --shadow: 0 10px 26px rgba(17,24,39,.10);
+    --shadowHover: 0 18px 44px rgba(17,24,39,.16);
+  }
+}
+
+/* Tema oscuro: TODO el grid oscuro (paneles + cards + texto legible) */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg: #0b1220;
+    --panel: #0f172a;
+    --card: #111827;
+    --text: #e5e7eb;
+    --muted: rgba(229,231,235,.72);
+    --border: rgba(255,255,255,.12);
+
+    --shadow: 0 10px 26px rgba(0,0,0,.40);
+    --shadowHover: 0 18px 44px rgba(0,0,0,.55);
+  }
+}
